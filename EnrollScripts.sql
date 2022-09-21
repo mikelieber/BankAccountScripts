@@ -11,7 +11,7 @@ CREATE DATABASE test_bank
 CREATE TABLE public.account_history
 (
     "Id" uuid NOT NULL,
-    "RecordTime" timestamp without time zone NOT NULL,
+    "RecordDate" date NOT NULL,
     "LastKnownAmount" numeric(8, 2) NOT NULL
 );
 

@@ -1,4 +1,3 @@
-SELECT DISTINCT ON ("Id") "Id", "RecordTime", "LastKnownAmount"
+SELECT DISTINCT ON ("Id") "Id", "RecordDate", "LastKnownAmount"
 FROM "public"."account_history"
-WHERE "RecordTime"::date = '2022-09-14'
-ORDER BY "Id", "RecordTime" DESC, "LastKnownAmount";
+ORDER BY "Id", "RecordDate" DESC, "LastKnownAmount";
